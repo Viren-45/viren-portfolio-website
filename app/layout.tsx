@@ -23,9 +23,9 @@ export const metadata: Metadata = {
       },
     ],
   },
-  metadataBase: new URL('https://virenportfolio.com'),
+  metadataBase: new URL('https://viren-portfolio-website.vercel.app/'),
   alternates: {
-    canonical: 'https://virenportfolio.com'
+    canonical: 'https://viren-portfolio-website.vercel.app/'
   }
 };
 

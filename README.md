@@ -4,7 +4,7 @@ Welcome to my personal portfolio project! This website showcases my work, skills
 
 ## 🚀 Live Demo
 
-Check it out here 👉 [virendrapurohit.dev](https://your-portfolio-link.com)
+Check it out here 👉 [https://viren-portfolio-website.vercel.app/]
 
 ---
 
@@ -33,7 +33,8 @@ Check it out here 👉 [virendrapurohit.dev](https://your-portfolio-link.com)
 
 ## 📸 Preview
 
-![Portfolio Screenshot](./public/preview.png)
+![Portfolio Screenshot]
+https://viren-portfolio-website.vercel.app/images/opengraph-image.png
 
 ---
 
