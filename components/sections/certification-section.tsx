@@ -73,7 +73,7 @@ export default function CertificationSection({ certifications }: CertificationSe
   // If no certifications, return empty section with message
   if (certifications.length === 0) {
     return (
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50" id="certifications">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             My Certifications
@@ -151,7 +151,7 @@ export default function CertificationSection({ certifications }: CertificationSe
   // For single certification, show without carousel
   if (certifications.length === 1) {
     return (
-      <section className="py-20 bg-gray-50">
+      <section id="certifications" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center mb-16">
@@ -174,7 +174,7 @@ export default function CertificationSection({ certifications }: CertificationSe
   }
   
   return (
-    <section className="py-20 bg-gray-50 overflow-hidden">
+    <section id="certifications" className="py-20 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-16">

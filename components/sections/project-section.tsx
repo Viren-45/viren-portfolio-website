@@ -118,7 +118,7 @@ export default function ProjectsSection({ initialProjects }: { initialProjects: 
   };
 
   return (
-    <section className="py-16 bg-white relative">
+    <section id="projects" className="py-16 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center mb-16">

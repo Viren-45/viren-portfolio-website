@@ -2,6 +2,7 @@
 
 import { ArrowDown, Mail } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import TechStack from '@/components/tech-stack/tech-stack';
 import { useState, useEffect } from 'react';
 
@@ -11,6 +12,16 @@ export default function HomeSection() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
+  const router = useRouter();
+  
+  // Handle smooth scroll for section navigation
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   
   // Array of roles to display in the typing animation
   const roles = [
@@ -87,16 +98,18 @@ export default function HomeSection() {
           {/* Action buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link 
-              href="/projects" 
+              href="/#projects" 
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg flex items-center gap-2 transition-all duration-300 shadow-md w-full sm:w-auto justify-center font-medium"
+              onClick={(e) => handleSmoothScroll(e, 'projects')}
             >
               Explore My Work
               <ArrowDown size={18} />
             </Link>
             
             <Link 
-              href="/contact" 
+              href="/#contact" 
               className="bg-white hover:bg-gray-50 text-indigo-600 border border-indigo-200 px-8 py-4 rounded-lg flex items-center gap-2 transition-all duration-300 w-full sm:w-auto justify-center font-medium"
+              onClick={(e) => handleSmoothScroll(e, 'contact')}
             >
               Let's Connect
               <Mail size={18} />
